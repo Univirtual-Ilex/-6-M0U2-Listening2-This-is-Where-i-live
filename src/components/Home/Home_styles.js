@@ -5,7 +5,7 @@ import animations from './Home_animations'
 const estilos_home = css`
     h1 {
         color: ${Ilex.morado};
-        font-size: 4em;
+        font-size: 4.5em;
         font-weight: bold;
         line-height:0.95;
     }
@@ -35,11 +35,11 @@ const estilos_home = css`
 
     .bloque-derecho>figure{
         position:absolute;
-        top: 3.5em;
-        left: 3em;
+        top: 5.6em;
+        left: -1em;
         img{
             display:block;
-            width:20.5em;
+            width:38.5em;
             height: auto;
         }
 
