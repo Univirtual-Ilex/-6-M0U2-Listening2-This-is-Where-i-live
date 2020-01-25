@@ -1,1 +1,1 @@
-export { default } from './ButtonAudio'
+export { default, ButtonAudio2 } from './ButtonAudio'

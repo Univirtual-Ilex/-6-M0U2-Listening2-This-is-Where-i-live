@@ -23,7 +23,7 @@ export const ICol = styled.div`
     ${stylesCol}
 `
 // Componente base
-const Grid_base = ({...props}) => {
+const Grid_base = ({w, h, p, py, px, pl, pt, pr, pb, ml, mt, mr, mb, my, mx, gutters, align, valign, justify, cols, ...props}) => {
     return (
         <section { ...props }> props.children </section>
     )

@@ -18,6 +18,23 @@ export const padding = (tipo) => {
 
 }
 
+export const margin = (tipo) => {
+    switch(true){
+        case tipo.m && tipo.m>=0:
+            return `${ tipo.m || 0 }em`
+        case tipo.mt && tipo.mt>=0:
+        case tipo.mr && tipo.mr>=0:
+        case tipo.mb && tipo.mb>=0:
+        case tipo.ml && tipo.ml>=0:
+           return `${tipo.mt || 0 }em ${tipo.mr || 0}em ${tipo.mb || 0}em ${tipo.ml || 0}em`
+        case tipo.mx && tipo.mx>=0:
+        case tipo.my && tipo.my>=0:
+            return `${tipo.my||0}em ${tipo.mx||0}em ${tipo.my||0}em ${tipo.mx||0}em`
+        default:
+            return '0em'
+    }
+}
+
 const styles = css``
 
 export const stylesRow = css`

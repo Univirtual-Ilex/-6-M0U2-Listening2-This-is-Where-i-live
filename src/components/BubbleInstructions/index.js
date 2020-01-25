@@ -1,1 +1,1 @@
-export { default } from './BubbleInstructions'
+export { default, BubbleInfo } from './BubbleInstructions'

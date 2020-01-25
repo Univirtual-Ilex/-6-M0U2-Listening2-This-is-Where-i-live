@@ -4,14 +4,16 @@ import React from 'react'
 import styled from 'styled-components'
 //Components
 import BocinaButton from '../BocinaButton'
-import styles, {draggableBlock, draggableItemb} from './Draggable_styles'
+import styles, {draggableBlock, draggableItemb, draggableClean} from './Draggable_styles'
 // import BocinaButton from '../BocinaButton'
 
 export const DraggableBlock = styled.div`
     ${draggableBlock}
 `
 
-
+export const DraggableClean = styled.div`
+    ${draggableClean}
+`
 
 // Componente base
 const Draggable_base = ({audio, name, ...props }) => {

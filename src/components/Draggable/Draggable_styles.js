@@ -39,4 +39,12 @@ export const draggableItemb = css`
  
 `
 
+export const draggableClean = css`
+    ${styles}
+    display: block;
+    color: ${Ilex.textos};
+    text-align: center;
+    font-size: 0.7em;
+`
+
 export default styles

@@ -29,7 +29,9 @@ const Container = styled(Container_base)`
         box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.15);
         width:${ props => props.w ? props.w : 68.8125 }em;
         height:${ props => props.h ? props.h : 32.625 }em;
-        border-radius:0.5em;
+        min-width:${ props => props.w ? props.w : 68.8125 }em;
+        min-height:${ props => props.h ? props.h : 32.625 }em;
+        border-radius: 0.5em;
         background-color: #fff;
         box-sizing: border-box;
         position:relative;

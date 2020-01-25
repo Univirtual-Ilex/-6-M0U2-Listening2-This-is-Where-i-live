@@ -32,10 +32,9 @@ export const UiButtonsContainer = styled.div`
     height:3em;
     display: flex;
     justify-content:space-between;
-    right:0;
     position:absolute;
-    right:1.6em;
-    top:1em;
+    right:${props => props.right || '1.6' }em;
+    top:${props => props.top || '1' }em;
 
 `
 
