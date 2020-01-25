@@ -9,6 +9,7 @@ import styles,{stylesCol, stylesRow} from './Grid_styles'
  * justify = center flex-start flex-end space-between space-around space-evenly
  * cols (default 12)
  * w ancho en porcentaje
+ * valign alinea el grupo de items verticalmente
  * align alinea el contenedor (default left) center right
  * gutters ancho de medianil (default 0) se mide en unidades de EM (revisar variables el tamaño del font)
  * p (padding) pr pt pb pl px py 

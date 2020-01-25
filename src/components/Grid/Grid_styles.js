@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-const padding = (tipo) => {
+export const padding = (tipo) => {
     switch(true){
         case tipo.p && tipo.p>=0:
             return `${ tipo.p || 0 }em`
@@ -23,7 +23,8 @@ const styles = css``
 export const stylesRow = css`
     display: flex;
     flex-wrap:wrap;
-    justify-content: ${ props => props.justify };
+    justify-content: ${ props => props.justify || 'flex-start' };
+    align-items: ${ props=> props.valign || 'flex-start'};
     width:${ (props) => ( props.w || 100 ) }%;
     margin: ${
         (props)=>{
