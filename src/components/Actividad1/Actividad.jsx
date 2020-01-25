@@ -6,6 +6,7 @@ import ButtonUi from '../ButtonControlUI'
 import {ICol, IRow} from '../Grid'
 import BubbleInstructions from '../BubbleInstructions'
 import Video from '../Video'
+import ButtonX from '../ButtonX'
 // Styles
 import styled from 'styled-components'
 import styles, { UiButtonsContainer } from './Actividad_styles'
@@ -16,9 +17,10 @@ import Ilex from '../../App/variables'
 
 
 
+
 const Actividad_base =  ({...props}) => {
     return (
-        <Container bgImage='./src/bg_actividad1.png' {...props}>
+        <Container bgImage='./src/bg_actividad1.png' {...props} h={36}>
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='slide the sentences to organize them, then press check to verify if it is right or wrong, press hint if you need help   ' />
@@ -42,12 +44,11 @@ const Actividad_base =  ({...props}) => {
                     <Video videoSrc='./media/video.mp4' w={ 30 } radius></Video>
                 </ICol>
             </IRow>
- 
 
-
-
-            <IRow w={85} align='center' py={1.5}>
-
+            <IRow w={100} justify='flex-end' py={0}>
+                <ICol w={15}>
+                    <ButtonX> Next </ButtonX>
+                </ICol>
             </IRow>
 
         </Container>
