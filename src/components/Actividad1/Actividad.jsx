@@ -6,7 +6,7 @@ import ButtonUi from '../ButtonControlUI'
 import {ICol, IRow} from '../Grid'
 import BubbleInstructions from '../BubbleInstructions'
 import Video from '../Video'
-import ButtonX from '../ButtonX'
+import {ButtonLink} from '../ButtonX'
 // Styles
 import styled from 'styled-components'
 import styles, { UiButtonsContainer } from './Actividad_styles'
@@ -18,7 +18,7 @@ import Ilex from '../../App/variables'
 
 
 
-const Actividad_base =  ({...props}) => {
+const Actividad_base =  ({staticContext ,...props}) => {
     return (
         <Container bgImage='./src/bg_actividad1.png' {...props} h={36}>
             
@@ -47,7 +47,7 @@ const Actividad_base =  ({...props}) => {
 
             <IRow w={100} justify='flex-end' py={0}>
                 <ICol w={15}>
-                    <ButtonX> Next </ButtonX>
+                <ButtonLink to='/actividad2'>Next</ButtonLink>
                 </ICol>
             </IRow>
 

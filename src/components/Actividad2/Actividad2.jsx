@@ -18,7 +18,7 @@ import {AreaClean} from '../ImageArea'
 import ButtonCheck from '../ButtonCheck'
 import Modal from '../Generales/Modal'
 // Componente base
-const Actividad2_base = ({...props}) => {
+const Actividad2_base = ({staticContext, ...props}) => {
 
     const [visible, setVisible] = useState(false)
     const [results, setresults] = useState(false)
@@ -43,7 +43,7 @@ const Actividad2_base = ({...props}) => {
     }
 
     return (
-        <Container bgImage='./src/bg_actividad1.png' {...props} h={36}>
+        <Container bgImage='./src/bg_actividad1.png' { ...props} h={36}>
 
             <UiButtonsContainer top={1.9} right={1.9}>
                 <ButtonUi icon='ilx-ayuda' tooltip='Click on the button below to listen to the audio of the video once again, then organize the sentences' />
@@ -64,12 +64,11 @@ const Actividad2_base = ({...props}) => {
                     <IRow>
                         <ICol>
                             <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> House </ButtonAudioLight>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>House</BubbleInfo>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>Bus Stop</BubbleInfo>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>Shop</BubbleInfo>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>Bakery</BubbleInfo>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>Drug Store</BubbleInfo>
-                            <BubbleInfo py={0.4} mx={0.2} my={0.5}>Apartament</BubbleInfo>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Bus Stop </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Shop </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Bakery </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Drug Store </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Apartament </ButtonAudioLight>
                         </ICol>
                     </IRow>
                     <ButtonAudio2 src='./media/audio.mp3' mt={2} px={2} py={2}>
@@ -116,7 +115,7 @@ const Actividad2_base = ({...props}) => {
 
                     <ICol pt={5}> <ButtonCheck onClick={() => check(values)} /> </ICol>
                 </IRow>
-                <Modal visible={visible} ok={results} err={!results} nxtUrl='/actividad2' repeatUrl='/actividad1' />
+                <Modal visible={visible} ok={results} err={!results} nxtUrl='/' repeatUrl='/actividad1' finishUrl/>
             </IRow>
 
 

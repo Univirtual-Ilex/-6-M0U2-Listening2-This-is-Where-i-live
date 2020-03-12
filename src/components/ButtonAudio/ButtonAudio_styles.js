@@ -54,6 +54,11 @@ button{
     padding: ${(props)=>(padding(props))};
     min-width: 7em;
     margin: ${(props)=>(margin(props))};
+    &.running{
+        box-shadow: 0 0.5em 0 0 ${Ilex.verde};
+        border: 0.2em solid ${Ilex.verde};
+        color: ${Ilex.rosa};
+    }
 }
 
 `
