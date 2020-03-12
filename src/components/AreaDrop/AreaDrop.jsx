@@ -8,7 +8,9 @@ import styles from './AreaDrop_styles'
 const AreaDrop_base = ({title, w, h, p, py, px, pl, pt, pr, pb, ml, mt, mr, mb, my, mx, ...props}) => {
     return (
         <div {...props}>
-            <h3>{title}</h3>
+            <div className="area-container">
+                {props.children}
+            </div>
         </div>
     )
 }

@@ -38,5 +38,25 @@ button.running{
 
 `
 
+export const buttonAudioLight = css`
+    display: inline-block;
+    color: ${Ilex.color_gris};
+    text-align: ${props => props.align || 'center'};
+    font-weight: lighter;
+button{
+    cursor:pointer;
+    border: 0.2em solid ${Ilex.dragItem};
+    color: ${Ilex.violeta2};
+    background:#fff;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 0 0 ${Ilex.dragItem};
+    font-size: 0.9em;
+    padding: ${(props)=>(padding(props))};
+    min-width: 7em;
+    margin: ${(props)=>(margin(props))};
+}
+
+`
+
 export default styles
     

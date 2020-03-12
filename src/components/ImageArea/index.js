@@ -1,1 +1,1 @@
-export { default } from './ImageArea'
+export { default, AreaClean } from './ImageArea'

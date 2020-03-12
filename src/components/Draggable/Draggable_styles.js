@@ -45,6 +45,11 @@ export const draggableClean = css`
     color: ${Ilex.textos};
     text-align: center;
     font-size: 0.7em;
+    text-transform:initial;
+    font-weight:normal;
+    button {
+        display:none
+    }
 `
 
 export default styles

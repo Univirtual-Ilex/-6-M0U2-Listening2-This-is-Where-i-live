@@ -2,7 +2,7 @@
 //Import
 import React, {useRef, useState} from 'react'
 import styled from 'styled-components'
-import styles,{buttonAudio2} from './ButtonAudio_styles'
+import styles,{buttonAudio2, buttonAudioLight } from './ButtonAudio_styles'
 //
 
 // Componente base
@@ -34,4 +34,5 @@ const ButtonAudio_base = ({src, w, h, p, py, px, pl, pt, pr, pb, ml, mt, mr, mb,
 }
 const ButtonAudio = styled(ButtonAudio_base)`${ styles }`
 export const ButtonAudio2 = styled(ButtonAudio)` ${ buttonAudio2 }`
+export const ButtonAudioLight = styled(ButtonAudio_base)` ${ buttonAudioLight }`
 export default ButtonAudio

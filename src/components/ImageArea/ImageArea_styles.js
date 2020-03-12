@@ -24,5 +24,21 @@ figure{
 
 `
 
+
+export const areaCleanStyles = css`
+padding:0 0;
+margin-bottom:0.3em;
+background-color: ${Ilex.dragItem};
+border-radius:none;
+    figure{
+        display:none;
+    }
+    .droparea{
+        margin:0;
+        padding:0;
+        height:2.2em;
+    }
+`
+
 export default styles
     
