@@ -63,15 +63,15 @@ const Actividad2_base = ({staticContext, ...props}) => {
                     </Subtitle>
                     <IRow>
                         <ICol>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> House </ButtonAudioLight>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Bus Stop </ButtonAudioLight>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Shop </ButtonAudioLight>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Bakery </ButtonAudioLight>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Drug Store </ButtonAudioLight>
-                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/audio.mp3'> Apartament </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/house.mp3'> House </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/busstop.mp3'> Bus Stop </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/shop.mp3'> Shop </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/bakery.mp3'> Bakery </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/drugstore.mp3'> Drug Store </ButtonAudioLight>
+                            <ButtonAudioLight py={0.4} mx={0.2} my={0.5} src='./media/apartment.mp3'> Apartment </ButtonAudioLight>
                         </ICol>
                     </IRow>
-                    <ButtonAudio2 src='./media/audio.mp3' mt={2} px={2} py={2}>
+                    <ButtonAudio2 src='./media/video_audio.mp3' mt={2} px={2} py={2}>
                         <IRow pb={1}>
                             <ICol className='bocina'>
                                 <i className='ilx-bocina'></i>

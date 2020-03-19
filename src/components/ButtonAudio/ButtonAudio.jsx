@@ -22,10 +22,10 @@ const ButtonAudio_base = ({src, w, h, p, py, px, pl, pt, pr, pb, ml, mt, mr, mb,
     }
     return (
         <div {...props}>
-            <button className={'btn-clean ' + (running ? 'running' : '')} onClick={ aPlay }>
+            <button className={'btn-clean ' + (running ? 'running' : '')} onClick={ aPlay } >
                 { props.children ? props.children : <img className="img-play" src={running ? "./src/pause_btn.svg" : "./src/play_btn.svg"  } alt="Play Audio" /> }
             </button>
-            <audio ref={ilxAudio}>
+            <audio ref={ilxAudio} onEnded={() => playAudio(false)}>
                 <source src={ src }/>
                 <span>No se puede reproducir el audio</span>
             </audio>

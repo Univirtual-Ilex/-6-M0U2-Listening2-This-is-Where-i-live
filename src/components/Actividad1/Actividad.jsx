@@ -23,7 +23,7 @@ const Actividad_base =  ({staticContext ,...props}) => {
         <Container bgImage='./src/bg_actividad1.png' {...props} h={36}>
             
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='slide the sentences to organize them, then press check to verify if it is right or wrong, press hint if you need help   ' />
+                <ButtonUi icon='ilx-ayuda' tooltip='For the next activity listen to the video carefully, then organize the sentences in the correct order' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' />
             </UiButtonsContainer>
             <IRow pt={2}>
