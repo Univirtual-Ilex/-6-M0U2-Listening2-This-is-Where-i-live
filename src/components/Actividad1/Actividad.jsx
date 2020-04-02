@@ -24,7 +24,7 @@ const Actividad_base =  ({staticContext ,...props}) => {
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='For the next activity listen to the video carefully, then organize the sentences in the correct order' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={() => window.location.reload() } />
             </UiButtonsContainer>
             <IRow pt={2}>
                 <ICol py={ 2 }>

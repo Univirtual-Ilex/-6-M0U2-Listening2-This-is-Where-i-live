@@ -47,7 +47,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
 
             <UiButtonsContainer top={1.9} right={1.9}>
                 <ButtonUi icon='ilx-ayuda' tooltip='Click on the button below to listen to the audio of the video once again, then organize the sentences' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={() => window.location.reload() } />
             </UiButtonsContainer>
 
             <IRow w={90} align='center' justify='center' pt={2.3} pb={1} px={2}>
@@ -115,7 +115,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
 
                     <ICol pt={5}> <ButtonCheck onClick={() => check(values)} /> </ICol>
                 </IRow>
-                <Modal visible={visible} ok={results} err={!results} nxtUrl='/' repeatUrl='/actividad1' finishUrl/>
+                <Modal visible={visible} ok={results} err={!results} nxtUrl='#/' repeatUrl='#/actividad1' finishUrl/>
             </IRow>
 
 
