@@ -16,7 +16,7 @@ const Home_base = function ({staticContext, ...props}) { // se le pasan las prop
                             <h1>This is where i live </h1>
                             <p>
                             Practice places in your neighborhood. 
-                            <span className='negrilla'> <br/> ¡Time to practice your listening skill!</span></p>
+                            <span className='negrilla'> <br/> Time to practice your listening skill!</span></p>
                             <ButtonLink to='/actividad1'>Start</ButtonLink>
                         </div>
                     </div>
